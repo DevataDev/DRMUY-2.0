@@ -5,29 +5,6 @@ DRM Decode script
 
 [![Buy Me a Coffee](https://img.shields.io/badge/Donate-Buy%20Me%20a%20Coffee-orange.svg)](https://www.buymeacoffee.com/andremxmxj)
 
-Support our Project!
-Hello everyone! We are the team behind the [project name], and we are passionate about providing free and useful solutions for the community. If you have found our project helpful and want to support us, you can now do so by buying us a coffee 🎉. Every little contribution helps to keep us motivated and improve the project.
-
-Why donate?
-Keep the project active and up-to-date.
-Cover hosting and development costs.
-Contribute to the growth and outreach of the project.
-How can you donate?
-We've chosen Buymeacoffee as our donation platform because it's simple and secure. To donate, simply click the "Buy Me a Coffee" button below:
-
-Any amount is welcome! Even the price of a coffee can make a difference and brighten our day ☕️.
-
-What will you get?
-If you decide to support us with a donation, we sincerely thank you! Additionally, we want to show our gratitude by offering the following:
-
-Special mention in the project's acknowledgment file.
-Access to beta versions and exclusive features before their official release.
-Periodic updates on the project's progress and news.
-Your support means a lot to us, and we're excited to have you on board!
-
-
-[![Buy Me a Coffee](https://img.shields.io/badge/Donate-Buy%20Me%20a%20Coffee-orange.svg)](https://www.buymeacoffee.com/andremxmxj)
-
 Contribute
 If you're as passionate about the project as we are and want to contribute in other ways, you're also welcome! You can:
 
