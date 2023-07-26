@@ -110,3 +110,14 @@ For questions, feedback, or support, feel free to contact us at [andremxmx@gmail
 
 Thank you for using DRMUY and joining us on this exciting journey!
 
+![Descripción de la imagen](https://raw.githubusercontent.com/andremxmx/DRMUY-2.0/main/img/edit.png)
+
+![Descripción de la imagen](https://raw.githubusercontent.com/andremxmx/DRMUY-2.0/main/img/ch.png)
+
+![Descripción de la imagen](https://raw.githubusercontent.com/andremxmx/DRMUY-2.0/main/img/add.png)
+
+![Descripción de la imagen](https://raw.githubusercontent.com/andremxmx/DRMUY-2.0/main/img/prof.png)
+
+![Descripción de la imagen](https://raw.githubusercontent.com/andremxmx/DRMUY-2.0/main/img/user.png)
+
+![Descripción de la imagen](https://raw.githubusercontent.com/andremxmx/DRMUY-2.0/main/img/vid.png)
