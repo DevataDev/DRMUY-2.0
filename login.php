@@ -54,7 +54,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 <div class="lg:flex">
                     <div class="lg:w-1/2 bg-cover" style="background-image:url('https://images.unsplash.com/photo-1546514714-df0ccc50d7bf?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=667&q=80')"></div>
                     <div class="w-full p-8 lg:w-1/2">
-                        <h2 class="text-2xl font-semibold text-gray-700 text-center">DRMUY 1.0</h2>
+                        <h2 class="text-2xl font-semibold text-gray-700 text-center">DRMUY 2.0</h2>
                         <p class="text-xl text-gray-600 text-center">Welcome back!</p>
                         <form method="POST" action="login.php" class="mt-4">
                             <?php if (isset($error)): ?>
