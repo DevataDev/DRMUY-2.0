@@ -3,7 +3,24 @@ DRM Decode script
 
 ## Support
 
-Wanna suport me?  https://www.buymeacoffee.com/andremxmxj
+[![Buy Me a Coffee](https://img.shields.io/badge/Donate-Buy%20Me%20a%20Coffee-orange.svg)](https://www.buymeacoffee.com/andremxmxj)
+
+Support our Project!
+Hello everyone! We are the team behind the [project name], and we are passionate about providing free and useful solutions for the community. If you have found our project helpful and want to support us, you can now do so by buying us a coffee 🎉. Every little contribution helps to keep us motivated and improve the project.
+
+Why donate?
+Keep the project active and up-to-date.
+Cover hosting and development costs.
+Contribute to the growth and outreach of the project.
+How can you donate?
+We've chosen Buymeacoffee as our donation platform because it's simple and secure. To donate, simply click the "Buy Me a Coffee" button below:
+
+Donate
+
+Any amount is welcome! Even the price of a coffee can make a difference and brighten our day ☕️.
+
+[![Buy Me a Coffee](https://img.shields.io/badge/Donate-Buy%20Me%20a%20Coffee-orange.svg)](https://www.buymeacoffee.com/andremxmxj)
+
 
 # DRMUY - 2.0
 
