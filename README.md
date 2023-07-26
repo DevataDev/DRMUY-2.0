@@ -15,12 +15,30 @@ Contribute to the growth and outreach of the project.
 How can you donate?
 We've chosen Buymeacoffee as our donation platform because it's simple and secure. To donate, simply click the "Buy Me a Coffee" button below:
 
-Donate
-
 Any amount is welcome! Even the price of a coffee can make a difference and brighten our day ☕️.
+
+What will you get?
+If you decide to support us with a donation, we sincerely thank you! Additionally, we want to show our gratitude by offering the following:
+
+Special mention in the project's acknowledgment file.
+Access to beta versions and exclusive features before their official release.
+Periodic updates on the project's progress and news.
+Your support means a lot to us, and we're excited to have you on board!
+
 
 [![Buy Me a Coffee](https://img.shields.io/badge/Donate-Buy%20Me%20a%20Coffee-orange.svg)](https://www.buymeacoffee.com/andremxmxj)
 
+Contribute
+If you're as passionate about the project as we are and want to contribute in other ways, you're also welcome! You can:
+
+**
+Fork the repository and submit pull requests with your improvements and bug fixes.
+Help us spread the word about the project by sharing it with your friends and colleagues.
+Report any issues or bugs you encounter so we can address them promptly.
+Provide feedback and suggestions for new features or enhancements.
+We believe that together, we can make this project even better and more valuable for the community.
+
+Thank you for considering supporting our project! Your contributions, whether through donations or other means, play a crucial role in helping us continue our efforts.
 
 # DRMUY - 2.0
 
