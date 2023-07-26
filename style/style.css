@@ -1,0 +1,21 @@
+@media (max-width: 600px) {
+  #cta-button-sidebar {
+    display: none;
+  }
+
+  #sidebar-toggle {
+    display: block;
+  }
+
+  .sidebar-text {
+    display: none;
+  }
+}
+.invisible {
+  visibility: hidden;
+  width: 0 !important;
+}
+
+.minWidth{
+    min-width: 220px !important;
+}
