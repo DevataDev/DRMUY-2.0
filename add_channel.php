@@ -38,7 +38,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
     insertCanal($db, $name, $m3u8Dir, $tmpDir, $keyU, $keyID, $proxy, $useProxy, $url, $video, $audio, $subtitle);
 
     // Redireccionar a la página de lista de canales después de la inserción
-    header("Location: lista_canales.php");
+    header("Location: all_channel.php");
     exit;
 }
 ?>
