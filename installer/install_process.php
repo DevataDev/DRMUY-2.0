@@ -42,6 +42,25 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['install'])) {
         fwrite($connFile, $connFileContent);
         fclose($connFile);
         require_once $connFilePath;
+
+        $insertUserQuery = "INSERT INTO `users` (`id`, `username`, `usermail`, `password`, `permissions`) VALUES (?, ?, ?, ?, ?)";
+
+        $stmt = $db->prepare($insertUserQuery);
+
+        $id = 1;
+        $username = 'Admin';
+        $usermail = 'drm@drm.com';
+        $hashedPassword = '$2y$10$mgPCjxp2i04PkS3RUyD40.7kT5WRdnMuci6eBCb0GY4I..G7kPLZy'; // Reemplaza esto con el hash bcrypt completo de la contraseña
+        $permissions = 'admin';
+
+        $stmt->bindParam(1, $id, PDO::PARAM_INT);
+        $stmt->bindParam(2, $username, PDO::PARAM_STR);
+        $stmt->bindParam(3, $usermail, PDO::PARAM_STR);
+        $stmt->bindParam(4, $hashedPassword, PDO::PARAM_STR);
+        $stmt->bindParam(5, $permissions, PDO::PARAM_STR);
+
+        $stmt->execute();
+
         $createTablesQuery = "
             SET SQL_MODE = 'NO_AUTO_VALUE_ON_ZERO';
             SET AUTOCOMMIT = 0;
@@ -74,7 +93,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['install'])) {
             ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
             INSERT INTO `users` (`id`, `username`, `usermail`, `password`, `permissions`) VALUES
-            (1, 'Admin', 'drm@drm.com', '$2y$10$mgPCjxp2i04PkS3RUyD40.7kT5WRdnMuci6eBCb0GY4I..G7kPLZy', 'admin');
+            (1, 'Admin', 'drm@drm.com', ?, 'admin');
 
             ALTER TABLE `canales`
               ADD PRIMARY KEY (`id`);
@@ -90,23 +109,26 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['install'])) {
             COMMIT;
         ";
 
-       $db->exec($createTablesQuery);
-            echo '<div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-4">';
-            echo '<h1 class="font-bold text-xl mb-2">Installation completed</h1>';
-            echo '<p class="mb-2">The database connection details have been saved in the conn.php file.</p>';
-            echo '<p class="mb-2">Login details for the administrator account:</p>';
-            echo '<ul class="mb-2">';
-            echo '<li>Username: Admin</li>';
-            echo '<li>Email: drm@drm.com</li>';
-            echo '<li>Password: 22333265</li>';
-            echo '</ul>';
-            echo '</div>';
-            echo '<a href="../index.php" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-4 focus:ring-blue-300">Go to Home</a>';
-            } else {
-                echo '<div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-4">';
-                echo '<h1 class="font-bold text-xl mb-2">Error</h1>';
-                echo '<p class="mb-2">Unable to connect to the database. Please check the connection details and try again.</p>';
-                echo '</div>';
-            }
+        $hashedPassword = '$2y$10$mgPCjxp2i04PkS3RUyD40.7kT5WRdnMuci6eBCb0GY4I..G7kPLZy'; 
+        $db->prepare("UPDATE `users` SET `password` = ? WHERE `id` = 1")->execute([$hashedPassword]);
+
+        $db->exec($createTablesQuery);
+        echo '<div class="bg-green-100 border-l-4 border-green-500 text-green-700 p-4 mb-4">';
+        echo '<h1 class="font-bold text-xl mb-2">Installation completed</h1>';
+        echo '<p class="mb-2">The database connection details have been saved in the conn.php file.</p>';
+        echo '<p class="mb-2">Login details for the administrator account:</p>';
+        echo '<ul class="mb-2">';
+        echo '<li>Username: Admin</li>';
+        echo '<li>Email: drm@drm.com</li>';
+        echo '<li>Password: 22333265</li>';
+        echo '</ul>';
+        echo '</div>';
+        echo '<a href="../index.php" class="inline-block bg-blue-500 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded focus:outline-none focus:ring-4 focus:ring-blue-300">Go to Home</a>';
+    } else {
+        echo '<div class="bg-red-100 border-l-4 border-red-500 text-red-700 p-4 mb-4">';
+        echo '<h1 class="font-bold text-xl mb-2">Error</h1>';
+        echo '<p class="mb-2">Unable to connect to the database. Please check the connection details and try again.</p>';
+        echo '</div>';
+    }
 }
 ?>
