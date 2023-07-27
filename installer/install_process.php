@@ -50,7 +50,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['install'])) {
         $id = 1;
         $username = 'Admin';
         $usermail = 'drm@drm.com';
-        $hashedPassword = '$2y$10$mgPCjxp2i04PkS3RUyD40.7kT5WRdnMuci6eBCb0GY4I..G7kPLZy'; // Reemplaza esto con el hash bcrypt completo de la contraseña
+        $hashedPassword = '$2y$10$mgPCjxp2i04PkS3RUyD40.7kT5WRdnMuci6eBCb0GY4I..G7kPLZy'; 
         $permissions = 'admin';
 
         $stmt->bindParam(1, $id, PDO::PARAM_INT);
@@ -108,8 +108,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['install'])) {
               MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
             COMMIT;
         ";
-
-        $hashedPassword = '$2y$10$mgPCjxp2i04PkS3RUyD40.7kT5WRdnMuci6eBCb0GY4I..G7kPLZy'; 
         $db->prepare("UPDATE `users` SET `password` = ? WHERE `id` = 1")->execute([$hashedPassword]);
 
         $db->exec($createTablesQuery);
